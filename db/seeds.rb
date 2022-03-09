@@ -63,7 +63,7 @@ cat1.products.create!({
   name:  'Hipster Socks',
   description: Faker::Hipster.paragraph(4),
   image: open_asset('apparel4.jpg'),
-  quantity: 8,
+  quantity: 0,
   price: 25.00
 })
 
