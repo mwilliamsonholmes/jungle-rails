@@ -6,8 +6,36 @@
 
   <div class="order-summary jumbotron">
     <h4>Thank you for your order!</h4>
+    <h3>Order Details:</h3>
   </div>
+  <div class="panel panel-default items">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th colspan="2">Product</th>
+          <th>Unit Price</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+      
+        <% @order.line_items.each do |item| %>
+          <%= render 'line_item', product: item.product, quantity: item.quantity %>
+        <% end %>
+      </tbody>
+      </table>
+</section>
 
-  <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
+<section>
+<div>
+<h3>
+Order Total: <%= humanized_money_with_symbol @order.total_cents * 0.01 %>
+</h3>
+<h4>
+Receipt sent to: <%= @order.email%>
+</h4>
 
+<%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
+</div>
 </section>
