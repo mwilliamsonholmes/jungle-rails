@@ -1,0 +1,16 @@
+<tr>
+<td>
+<%= category.name %>
+ </td>
+ <td>
+ <ul>
+ <% category.products.each do |product| %>
+ <li> <%= link_to product.name, product %></li>
+ <% end %>
+ </ul>
+ <td>
+ <%= category.products.count%>
+ 
+ </td>
+</td>
+</tr>
