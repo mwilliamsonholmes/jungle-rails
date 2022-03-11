@@ -15,3 +15,10 @@ body {
 form.button_to {
   display: inline;
 }
+
+.sign-up-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}

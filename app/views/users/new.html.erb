@@ -1,0 +1,20 @@
+<section class="admin-products-new">
+
+  <header class="page-header">
+
+<h1>Signup for Jungle!</h1>
+</header>
+
+<div class="col-sm-6 col-sm-offset-1">
+<form class="form-inline"></form>
+<%= form_for :user, url: '/users' do |f| %>
+<div class="sign-up-form">
+  <label>First Name: <%= f.text_field :first_name, class:  'form-control' %></label>
+  <label>Last Name: <%= f.text_field :last_name, class:  'form-control' %></label>
+  <label>Email: <%= f.text_field :email, class:  'form-control' %></label>
+  <label>Password: <%= f.password_field :password, class:  'form-control' %></label>
+  <label>Password Confirmation: <%= f.password_field :password_confirmation, class:  'form-control' %></label>
+  <%= f.submit "Submit" %>
+</form>
+<% end %>
+</div>
