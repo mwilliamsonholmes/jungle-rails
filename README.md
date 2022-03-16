@@ -4,8 +4,11 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 
 ## Final Product
 
-![""](#)
-!["screenshot description"](#)
+!["Cart details"](https://github.com/mwilliamsonholmes/jungle-rails/blob/master/docs/Order-details.png?raw=true)
+
+!["Payment details"](https://github.com/mwilliamsonholmes/jungle-rails/blob/master/docs/payment.png?raw=true)
+
+!["Receipt"](https://github.com/mwilliamsonholmes/jungle-rails/blob/master/docs/receipt.png?raw=true)
 ## Additional Steps for Apple M1 Machines
 
 1. Make sure that you are runnning Ruby 2.6.6 (`ruby -v`)
