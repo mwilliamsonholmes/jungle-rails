@@ -30,7 +30,7 @@ RSpec.feature "users can click the 'Add to Cart' button for a product on the hom
    page.has_content?('My Cart (0)')
 
    first('.btn-primary').click
-  #  expect(page).to have_css 'i.fa-shopping-cart', count: 1
+  
   page.has_content?('My Cart (1)')
   end
   
